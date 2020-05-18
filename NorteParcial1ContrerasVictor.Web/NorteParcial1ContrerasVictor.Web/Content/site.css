@@ -1,0 +1,88 @@
+﻿/*IMPORTANTE - No modificar estos estilos, ya que son imprescindibles para que la pagina se vea correctamente.*/
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+}
+
+/*p {
+    text-align: justify;
+}*/
+
+/*clase anterior*/
+h1 {
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 1.2em
+}
+
+h2 {
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 1.1em
+}
+
+span {
+    color: #060;
+}
+
+strong {
+    font-size: 20px;
+}
+
+em {
+    color: #FFF;
+    background-color: #7d99e0;
+}
+
+
+#container {
+    width: 900px;
+    margin: 0px auto;
+}
+
+header {
+    background-color: blue;
+    height: 80px;
+}
+
+section {
+    background-color: antiquewhite;
+    float: left;
+    width: 80%;
+    min-height: 450px;
+}
+
+aside {
+    background-color: darkgray;
+    float: left;
+    width: 20%;
+    min-height: 450px;
+}
+
+footer {
+    clear: both;
+    background-color: blue;
+    color: #fff;
+}
+
+.button-success, button-error {
+    color: #fff;
+    border-radius: 5px;
+    font-size: 85%;
+    height: 35px;
+}
+
+.button-success {
+    background: rgb(28,185,65);
+}
+
+.button-error {
+    background: rgb(255, 0, 0);
+}
