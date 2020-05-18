@@ -18,5 +18,10 @@ namespace NorteParcial1ContrerasVictor.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult Info()
+        {
+            return View();
+        }
     }
 }

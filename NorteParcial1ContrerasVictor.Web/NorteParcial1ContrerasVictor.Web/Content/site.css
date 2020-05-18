@@ -1,5 +1,7 @@
 ﻿/*IMPORTANTE - No modificar estos estilos, ya que son imprescindibles para que la pagina se vea correctamente.*/
 
+/*IMPORTANTE - No modificar estos estilos, ya que son imprescindibles para que la pagina se vea correctamente.*/
+
 html, body {
     height: 100%;
 }
@@ -41,48 +43,89 @@ em {
     background-color: #7d99e0;
 }
 
+/* --------------- layout ------------------------*/
 
 #container {
-    width: 900px;
-    margin: 0px auto;
+    width: 1080px;
+    margin: 0 auto;
 }
 
+.logo {
+    width: 150px;
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+    nav ul li {
+        list-style: none;
+        display: inline;
+    }
+
+        nav ul li > a {
+            padding: 5px;
+            text-decoration: none;
+            background-color: powderblue;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+
 header {
-    background-color: blue;
-    height: 80px;
+    display: block;
+    background-color: #6793ec;
+    padding: 10px 0px;
 }
 
 section {
-    background-color: antiquewhite;
-    float: left;
-    width: 80%;
+    background-color: #fafafa;
+    padding: 5px;
+    overflow: auto;
+    /*float: left;*/
+    float: right;
+    width: 79%;
+    margin-top: 5px;
+    margin-bottom: 5px;
     min-height: 450px;
 }
 
 aside {
-    background-color: darkgray;
+    /*float: right;*/
     float: left;
-    width: 20%;
-    min-height: 450px;
+    width: 19%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 footer {
     clear: both;
-    background-color: blue;
-    color: #fff;
+    position: relative;
+    height: 40px;
+    background-color: #6793ec;
+    text-align: center;
+    color: #fafafa;
 }
 
-.button-success, button-error {
+.button-success, .button-error, .button-default {
     color: #fff;
     border-radius: 5px;
     font-size: 85%;
     height: 35px;
 }
 
-.button-success {
+.color-success {
     background: rgb(28,185,65);
 }
 
-.button-error {
+.color-error {
     background: rgb(255, 0, 0);
+}
+
+.color-default {
+    background: rgb(237, 227, 227);
+    color:#000;
 }
