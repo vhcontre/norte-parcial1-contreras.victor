@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - UAI</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="/">
+                Logo de la Institución
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="/">Principal</a> </li>
+                    <li><a href="/Home/Contact">Contacto</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article>
+                @RenderBody()
+            </article>
+        </section>
+
+        <aside id="pub">
+            <article>
+                <div>
+                    <h3>Titulo</h3>
+                </div>
+            </article>
+        </aside>
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Norte Contreras Victor | Parcial 1</p>
+        </footer>
+    </div>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
