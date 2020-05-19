@@ -116,6 +116,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Info.cshtml" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />
+    <Content Include="Views\Home\Producto.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

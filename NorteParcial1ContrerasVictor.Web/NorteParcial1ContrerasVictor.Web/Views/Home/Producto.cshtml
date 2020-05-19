@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Producto";
+}
+
+<h2>Gestión de Productos</h2>
+<hr />
+<div>
+    <table border="0">
+        <tr>
+            <th>Código</th>
+            <td>
+                <input id="txtCodigo" type="number" placeholder="Ingrese código del producto" />
+            </td>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <td>
+                <input id="txtNombre" type="text" placeholder="Max. de caracteres 10." />
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <input id="btnSave" type="button" value="Grabar" class="button-success color-success" />
+                <input id="btnList" type="button" value="Listar productos" class="button-default color-default" />
+            </td>
+        </tr>
+    </table>
+</div>
+<hr />
+<div id="resultado">
+
+</div>
+
+@section scripts{
+    <script>
+
+        var productos = new Array();
+
+        function Producto() {
+
+            this.setCodigo = function (value) { this._codigo = value; }
+            this.getCodigo = function () { return this._codigo; }
+
+            this.setNombre = function (value) { this._nombre = value; }
+            this.getNombre = function () { return this._nombre; }
+        }
+
+        //Eventos de los botones
+
+        $("#btnSave").click(function () {
+
+            var pro = new Producto();
+            pro.setCodigo($("#txtCodigo").val());
+            pro.setNombre($("#txtNombre").val());
+
+            productos.push(pro);
+            $("#txtCodigo").val("");
+            $("#txtNombre").val("");
+        });
+
+        $("#btnList").click(function () {
+
+            var ctl = $("#resultado");
+            ctl.html("");
+            $.each(productos, function (i, e) {
+                ctl.append("Codigo: " + e.getCodigo() + " - " + "Nombre: " + e.getNombre() + "<br />");
+            });
+        });
+
+    </script>
+
+}
+
